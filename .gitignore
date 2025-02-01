@@ -58,3 +58,7 @@ ProjectSettings/EditorBuildSettings.asset
 # JetBrains Rider
 .idea/
 *.iml
+
+.vs
+IvoBuild
+.vsconfig
