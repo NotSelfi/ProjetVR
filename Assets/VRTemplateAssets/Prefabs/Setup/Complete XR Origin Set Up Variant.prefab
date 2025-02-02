@@ -819,7 +819,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1799845391202036, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: Flags
-      value: 1
+      value: 262145
       objectReference: {fileID: 0}
     - target: {fileID: -1799845391202036, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: SortKey

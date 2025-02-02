@@ -4,15 +4,15 @@ using UnityEngine;
 using Fusion;
 
 
-public class IvoPlayerSpawner : SimulationBehaviour, IPlayerJoined
+public class IvoPlayerSpawner : SimulationBehaviour, IPlayerJoined, INetworkObjectProvider
 {
-    public GameObject PlayerPrefab;
+    public IvoIGetSpawnableGO PlayerPrefab;
 
     public void PlayerJoined(PlayerRef player)
     {
         if (player == Runner.LocalPlayer)
         {
-            Runner.Spawn(PlayerPrefab, new Vector3(0, 1, 0), Quaternion.identity);
+            Runner.Spawn(PlayerPrefab.IvoGetSpawnablerGameObject(), new Vector3(0, 1, 0), Quaternion.identity);
         }
     }
 }
